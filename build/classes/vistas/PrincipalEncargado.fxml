@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="farmacia.PrincipalEncargadoController">
+   <children>
+      <ImageView fx:id="ivAdministrarPromocion" fitHeight="157.0" fitWidth="166.0" layoutX="89.0" layoutY="52.0" onMouseClicked="#ivAdministrarPromocionClic">
+         <image>
+            <Image url="@../imagenesIconos/Promocion.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="209.0" text="Administración de promociones">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

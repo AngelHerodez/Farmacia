@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="734.0" prefWidth="1014.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="farmacia.GestionPersonalController">
+   <children>
+      <ImageView fitHeight="99.0" fitWidth="105.0" layoutX="471.0" layoutY="61.0" onMouseClicked="#ivModificarUsuario">
+         <image>
+            <Image url="@../imagenesIconos/modificarUsuario.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="466.0" layoutY="178.0" text="Modificar usuario" />
+      <ImageView fitHeight="107.0" fitWidth="116.0" layoutX="759.0" layoutY="57.0" onMouseClicked="#ivEliminarUsuario">
+         <image>
+            <Image url="@../imagenesIconos/eliminarUsuario.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="776.0" layoutY="178.0" text="Eliminar usuario" />
+      <TableView fx:id="tableTrabajadores" layoutX="47.0" layoutY="227.0" prefHeight="476.0" prefWidth="915.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colNombre" prefWidth="201.0" text="Nombre" />
+            <TableColumn fx:id="colApellidoPaterno" prefWidth="230.0" text="Apellido paterno" />
+            <TableColumn fx:id="colApellidoMaterno" prefWidth="223.0" text="Apellido materno" />
+            <TableColumn fx:id="colPuesto" prefWidth="185.0" text="Puesto" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="60.0" fitWidth="61.0" layoutX="8.0" layoutY="14.0" onMouseClicked="#ivVolver">
+         <image>
+            <Image url="@../imagenesIconos/volver.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="idBtnAgregarTrabajador" layoutX="138.0" layoutY="121.0" mnemonicParsing="false" onAction="#btnAgregarTrabajador" prefHeight="31.0" prefWidth="157.0" text="Agregar trabajador" />
+   </children>
+</AnchorPane>

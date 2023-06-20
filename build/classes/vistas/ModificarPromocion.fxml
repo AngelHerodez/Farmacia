@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="635.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="farmacia.ModificarPromocionController">
+   <children>
+      <Label layoutX="243.0" layoutY="15.0" text="Modificar promoción" textFill="#16c7d3">
+         <font>
+            <Font name="Comic Sans MS" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ivVolver" fitHeight="60.0" fitWidth="61.0" layoutX="14.0" layoutY="10.0" onMouseClicked="#ivVolver">
+         <image>
+            <Image url="@../imagenesIconos/volver.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="189.0" layoutY="335.0" text="Sucursal">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbSucursal" layoutX="106.0" layoutY="380.0" prefHeight="31.0" prefWidth="239.0" />
+      <Button layoutX="666.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnRegistrar" text="Registrar">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cbProducto" layoutX="105.0" layoutY="147.0" prefHeight="31.0" prefWidth="239.0" />
+      <Label layoutX="183.0" layoutY="107.0" text="Producto">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="175.0" layoutY="224.0" text="Descripcion">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfDescripcion" alignment="TOP_LEFT" layoutX="104.0" layoutY="249.0" prefHeight="60.0" prefWidth="664.0" />
+   </children>
+</AnchorPane>

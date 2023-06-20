@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="734.0" prefWidth="1014.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="farmacia.GestionPromocionesController">
+   <children>
+      <ImageView fx:id="ivVolver" fitHeight="60.0" fitWidth="61.0" layoutX="8.0" layoutY="14.0" onMouseClicked="#ivVolverclic">
+         <image>
+            <Image url="@../imagenesIconos/volver.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-173.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ivAgregarPromocion" fitHeight="150.0" fitWidth="200.0" layoutX="69.0" layoutY="74.0" onMouseClicked="#ivAgregarPromocionClic" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenesIconos/AgregarPromocion.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivModificarPromocion" fitHeight="150.0" fitWidth="200.0" layoutX="432.0" layoutY="74.0" onMouseClicked="#ivModificarPromocionClic" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenesIconos/EditarPromocion.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ivEliminarPromocion" fitHeight="150.0" fitWidth="200.0" layoutX="778.0" layoutY="74.0" onMouseClicked="#ivEliminarPromocionClic" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenesIconos/EliminarPromocion.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="442.0" layoutY="264.0" text="Modifcar promocion" />
+      <Label layoutX="79.0" layoutY="253.0" text="Agregar promocion" />
+      <Label layoutX="788.0" layoutY="264.0" text="Eliminar promocion" />
+      <TableView fx:id="tablePromociones" layoutX="75.0" layoutY="315.0" prefHeight="352.0" prefWidth="865.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="67.0" text="ID" />
+          <TableColumn fx:id="colDescripcion" prefWidth="259.0" text="Descripcion" />
+          <TableColumn fx:id="colProducto" prefWidth="273.0" text="Producto" />
+          <TableColumn fx:id="colSucursal" prefWidth="265.0" text="Sucursal" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
