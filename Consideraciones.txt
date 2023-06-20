@@ -1,0 +1,5 @@
+Para la ejecucion de este proyecto es necesario:
+1. Tener la version 1.8 del JDK.
+2. Exportar el conector de SQL.
+3. iniciar la bases de datos adjunta. 
+4. Para poder manipular el codigo con sus ventanas es necesario tener NetBeans y JavaFX
